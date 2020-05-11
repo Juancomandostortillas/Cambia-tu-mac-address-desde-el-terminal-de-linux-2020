@@ -1,0 +1,24 @@
+
+# Cambia-tu-mac-address-desde-el-terminal-de-linux-2020
+Aprende de una manera tan facil de cambiar tu mac adrres desde el terminal , puedes aprendea y comprender cada paso , o si lo prefieres tan solo copia y pega 
+
+Aber un terminal ( cntrl + alt + t ) y escoje uno desdeo texto que te dejo aqui abajo 
+dale a enter cada vez que veaz #
+
+   Wlan0 (wifi)
+sudo ifconfig wlan0 down   #
+sudo macchanger -A wlan0  #
+
+VERAS ALGO COMO ESTO
+
+kali@kali:~$ sudo macchanger -A wlan0
+Current MAC: XX:XX:XX:XX:XX  (SOKRAT Ltd.)
+Permanent MAC: X:XX:XX:XX:XX    (Intel Corporate)
+New MAC:     XX:XX:XX:XX:78 (Smart Doorphones)   <========  Aquie tienes tu nueva mac adress
+
+sudo ifconfig wlan0 up # <======== para que vuelvas a tener wifi
+
+   Eth0 (cable lan) es igual solo que no ase falta haser poner el comando sudo ifconfig wlan0 down  
+   
+Por curiosidad Una dirección MAC es el identificador único asignado por el fabricante a una pieza de hardware de red (como una tarjeta inalámbrica o una tarjeta Ethernet). «MAC» significa Media Access Control, y cada código tiene la intención de ser único para un dispositivo en particular 
+   
